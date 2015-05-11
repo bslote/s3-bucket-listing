@@ -111,7 +111,7 @@ function getInfoFromS3Data(xml) {
 //    prefix: ...
 // } 
 function prepareTable(info) {
-  var files = info.files.concat(info.directories)
+  var files = info.directories.concat(info.files)
     , prefix = info.prefix
     ;
   var cols = [ 45, 30, 15 ];
